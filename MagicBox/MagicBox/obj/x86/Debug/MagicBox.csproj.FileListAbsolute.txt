@@ -330,3 +330,4 @@ D:\vs2017_work\MagicBox\MagicBox\obj\x86\Debug\Microsoft.Xaml.Interactions.pri.x
 D:\vs2017_work\MagicBox\MagicBox\obj\x86\Debug\Microsoft.Xaml.Interactivity.pri.xml
 D:\vs2017_work\MagicBox\MagicBox\obj\x86\Debug\GalaSoft.MvvmLight.Platform.pri.xml
 D:\vs2017_work\MagicBox\MagicBox\obj\x86\Debug\ProjectArchitectures.txt
+D:\vs2017_work\MagicBox\MagicBox\obj\x86\Debug\MagicBox.csprojResolveAssemblyReference.cache

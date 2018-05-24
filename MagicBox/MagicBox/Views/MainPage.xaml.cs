@@ -16,6 +16,8 @@ namespace MagicBox.Views
         public MainPage()
         {
             InitializeComponent();
+            
         }
+      
     }
 }

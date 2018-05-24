@@ -8,7 +8,7 @@ using Windows.UI.Xaml.Controls;
 
 namespace MagicBox.Models
 {
-    class Model : INotifyPropertyChanged
+  public  class Model : INotifyPropertyChanged
     {
         private DateTimeOffset _date;
         private Uri _songUri;
@@ -94,8 +94,8 @@ namespace MagicBox.Models
         public Model() {
             this._id = "0";
             this.date = DateTime.Now.Date;
-            this.songUri = new Uri("");
-            this.photoUri = new Uri("");
+            //this.songUri = ;//new Uri("Assets/");
+            //this.photoUri =;// new Uri("Assets/");
             this.mood = "";
             this.diary = "";
             this.feedback = "";
