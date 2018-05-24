@@ -92,10 +92,10 @@ namespace MagicBox.Models
         }
 
         public Model() {
-            this._id = "0";
+            this._id = Guid.NewGuid().ToString();
             this.date = DateTime.Now.Date;
-            //this.songUri = ;//new Uri("Assets/");
-            //this.photoUri =;// new Uri("Assets/");
+            this.songUri = new Uri("ms-appx:///Assets/example.mp3");
+            this.photoUri = new Uri("ms-appx:///Assets/example.jpg");
             this.mood = "";
             this.diary = "";
             this.feedback = "";

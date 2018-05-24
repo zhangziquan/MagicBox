@@ -31,13 +31,13 @@
     <AppXManifest Include="D:\vs2017_work\MagicBox\MagicBox\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-05-24T09:40:11.137</Modified>
+      <Modified>2018-05-24T11:48:23.924</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\vs2017_work\MagicBox\MagicBox\bin\x86\Debug\MagicBox.exe">
       <PackagePath>entrypoint\MagicBox.exe</PackagePath>
-      <Modified>2018-05-24T09:40:09.868</Modified>
+      <Modified>2018-05-24T11:48:21.928</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\zhangxiaofan\.nuget\packages\commonservicelocator\2.0.2\lib\netstandard2.0\CommonServiceLocator.dll">
       <PackagePath>CommonServiceLocator.dll</PackagePath>
@@ -767,7 +767,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\vs2017_work\MagicBox\MagicBox\bin\x86\Debug\MagicBox.xr.xml">
       <PackagePath>MagicBox.xr.xml</PackagePath>
-      <Modified>2018-05-24T09:18:23.670</Modified>
+      <Modified>2018-05-24T11:40:59.857</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.16299.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -776,11 +776,11 @@
     <AppxPackagedFile Include="D:\vs2017_work\MagicBox\MagicBox\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-05-24T09:40:10.380</Modified>
+      <Modified>2018-05-24T11:48:22.656</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\vs2017_work\MagicBox\MagicBox\bin\x86\Debug\Core\MagicBox.exe">
       <PackagePath>MagicBox.exe</PackagePath>
-      <Modified>2018-05-24T09:40:11.131</Modified>
+      <Modified>2018-05-24T11:48:23.918</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
