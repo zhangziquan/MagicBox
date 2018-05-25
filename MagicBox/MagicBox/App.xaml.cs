@@ -39,7 +39,7 @@ namespace MagicBox
 
         private ActivationService CreateActivationService()
         {
-            return new ActivationService(this, typeof(ViewModels.MainViewModel), new Lazy<UIElement>(CreateShell));
+            return new ActivationService(this, typeof(ViewModels.SignInViewModel), new Lazy<UIElement>(CreateShell));
         }
 
         private UIElement CreateShell()

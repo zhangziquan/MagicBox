@@ -141,13 +141,13 @@
     <value>The page '{0}' is unknown by the NavigationService</value>
     <comment>The page is unknown or not registered in navigation service</comment>
   </data>
+  <data name="Shell_SignIn.Content" xml:space="preserve">
+    <value>SignIn</value>
+    <comment>Navigation view item name for SignIn</comment>
+  </data>
   <data name="Shell_Main.Content" xml:space="preserve">
     <value>Main</value>
     <comment>Navigation view item name for Main</comment>
-  </data>
-  <data name="Shell_Blank.Content" xml:space="preserve">
-    <value>Blank</value>
-    <comment>Navigation view item name for Blank</comment>
   </data>
   <data name="ExceptionSettingsStorageExtensionsFileNameIsNullOrEmpty" xml:space="preserve">
     <value>File name is null or empty. Specify a valid file name</value>

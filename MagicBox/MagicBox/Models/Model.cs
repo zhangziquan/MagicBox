@@ -8,7 +8,7 @@ using Windows.UI.Xaml.Controls;
 
 namespace MagicBox.Models
 {
-  public  class Model : INotifyPropertyChanged
+    public class Model : INotifyPropertyChanged
     {
         private DateTimeOffset _date;
         private Uri _songUri;
@@ -18,25 +18,32 @@ namespace MagicBox.Models
         private String _id;
         private String _diary;
 
-        public String getId() {
+        public String getId()
+        {
             return _id;
         }
 
-        public DateTimeOffset date {
-            get {
+        public DateTimeOffset date
+        {
+            get
+            {
                 return _date;
             }
-            set {
+            set
+            {
                 _date = value;
                 RaisePropertyChanged("date");
             }
         }
 
-        public Uri songUri {
-            get {
+        public Uri songUri
+        {
+            get
+            {
                 return _songUri;
             }
-            set {
+            set
+            {
                 _songUri = value;
                 RaisePropertyChanged("songUri");
             }
@@ -91,11 +98,12 @@ namespace MagicBox.Models
             }
         }
 
-        public Model() {
+        public Model()
+        {
             this._id = Guid.NewGuid().ToString();
             this.date = DateTime.Now.Date;
             this.songUri = new Uri("ms-appx:///Assets/example.mp3");
-            this.photoUri = new Uri("ms-appx:///Assets/example.jpg");
+            this.photoUri = new Uri("ms-appx:///Assets/example.png");
             this.mood = "";
             this.diary = "";
             this.feedback = "";
@@ -124,8 +132,10 @@ namespace MagicBox.Models
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
-        protected void RaisePropertyChanged(String _str) {
-            if (PropertyChanged != null) {
+        protected void RaisePropertyChanged(String _str)
+        {
+            if (PropertyChanged != null)
+            {
                 PropertyChanged(this, new PropertyChangedEventArgs(_str));
             }
         }

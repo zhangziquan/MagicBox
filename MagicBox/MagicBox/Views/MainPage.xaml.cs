@@ -16,8 +16,11 @@ namespace MagicBox.Views
         public MainPage()
         {
             InitializeComponent();
-            
         }
-      
+
+        private void ListViewItemClick(object sender, ItemClickEventArgs e)
+        {
+            ;
+        }
     }
 }

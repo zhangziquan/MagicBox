@@ -8,7 +8,7 @@
     <TargetOsDescription>Windows 10.0</TargetOsDescription>
     <SolutionConfiguration>Debug|x86</SolutionConfiguration>
     <PackageArchitecture>x86</PackageArchitecture>
-    <PackageIdentityName>C07C90AA-0A20-4D94-A609-35EC2EBD63D0</PackageIdentityName>
+    <PackageIdentityName>554C72F9-CDCA-4F66-BBEE-4A817122A4B4</PackageIdentityName>
     <PackageIdentityPublisher>CN=zhangxiaofan</PackageIdentityPublisher>
     <IntermediateOutputPath>D:\vs2017_work\MagicBox\MagicBox\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
@@ -543,6 +543,12 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\NuGetPackagesFallback\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.0.8\runtimes\win10-x86\lib\uap10.0.15138\netstandard.dll">
       <PackagePath>netstandard.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\vs2017_work\MagicBox\MagicBox\Assets\example.jpg">
+      <PackagePath>Assets\example.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\vs2017_work\MagicBox\MagicBox\Assets\example.mp3">
+      <PackagePath>Assets\example.mp3</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\vs2017_work\MagicBox\MagicBox\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>

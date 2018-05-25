@@ -8,8 +8,9 @@ namespace MagicBox.ViewModels
     public class MainViewModel : ViewModelBase
     {
 
-       // private static MainViewModel viewModel;
-        public MainViewModel() {
+        // private static MainViewModel viewModel;
+        public MainViewModel()
+        {
             var item = new Model();
             this.allItems.Add(item);
 
@@ -22,7 +23,7 @@ namespace MagicBox.ViewModels
         private Models.Model selectedItem = default(Models.Model);
         public Models.Model SelectedItem { get { return selectedItem; } set { this.selectedItem = value; } }
 
-        public  void AddItem(Uri songUri, Uri photoUri, String mood, String diary, String feedback)
+        public void AddItem(Uri songUri, Uri photoUri, String mood, String diary, String feedback)
         {
             var item = new Model(songUri, photoUri, mood, diary, feedback);
             this.allItems.Add(item);
@@ -32,9 +33,9 @@ namespace MagicBox.ViewModels
 
         public void updateItem(String id, Uri songUri, Uri photoUri, String mood, String diary, String feedback)
         {
-            foreach(var it in allItems)
+            foreach (var it in allItems)
             {
-                if(it.getId() == id)
+                if (it.getId() == id)
                 {
                     it.songUri = songUri;
                     it.photoUri = photoUri;
@@ -48,9 +49,9 @@ namespace MagicBox.ViewModels
 
         public void deleteItem(String id)
         {
-            foreach(var it in allItems)
+            foreach (var it in allItems)
             {
-                if(it.getId() == id)
+                if (it.getId() == id)
                 {
                     allItems.Remove(it);
                     break;
@@ -58,7 +59,7 @@ namespace MagicBox.ViewModels
             }
         }
 
-     
+
 
 
     }
