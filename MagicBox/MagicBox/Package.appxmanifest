@@ -8,11 +8,11 @@
   IgnorableNamespaces="uap mp genTemplate">
 
   <Identity
-    Name="C07C90AA-0A20-4D94-A609-35EC2EBD63D0"
+    Name="554C72F9-CDCA-4F66-BBEE-4A817122A4B4"
     Publisher="CN=zhangxiaofan"
     Version="1.0.0.0" />
 
-  <mp:PhoneIdentity PhoneProductId="C07C90AA-0A20-4D94-A609-35EC2EBD63D0" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <mp:PhoneIdentity PhoneProductId="554C72F9-CDCA-4F66-BBEE-4A817122A4B4" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
     <DisplayName>MagicBox</DisplayName>

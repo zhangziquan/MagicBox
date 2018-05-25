@@ -17,16 +17,16 @@ namespace MagicBox.ViewModels
 
             SimpleIoc.Default.Register(() => new NavigationServiceEx());
             SimpleIoc.Default.Register<ShellViewModel>();
+            Register<SignInViewModel, SignInPage>();
             Register<MainViewModel, MainPage>();
-            Register<BlankViewModel, BlankPage>();
             Register<SettingsViewModel, SettingsPage>();
         }
 
         public SettingsViewModel SettingsViewModel => ServiceLocator.Current.GetInstance<SettingsViewModel>();
 
-        public BlankViewModel BlankViewModel => ServiceLocator.Current.GetInstance<BlankViewModel>();
-
         public MainViewModel MainViewModel => ServiceLocator.Current.GetInstance<MainViewModel>();
+
+        public SignInViewModel SignInViewModel => ServiceLocator.Current.GetInstance<SignInViewModel>();
 
         public ShellViewModel ShellViewModel => ServiceLocator.Current.GetInstance<ShellViewModel>();
 

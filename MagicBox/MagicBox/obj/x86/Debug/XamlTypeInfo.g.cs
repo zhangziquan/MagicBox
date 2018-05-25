@@ -186,33 +186,33 @@ namespace MagicBox.MagicBox_XamlTypeInfo
             _typeNameTable[2] = "MagicBox.ViewModels.SettingsViewModel";
             _typeNameTable[3] = "GalaSoft.MvvmLight.ViewModelBase";
             _typeNameTable[4] = "GalaSoft.MvvmLight.ObservableObject";
-            _typeNameTable[5] = "MagicBox.ViewModels.BlankViewModel";
-            _typeNameTable[6] = "MagicBox.ViewModels.MainViewModel";
+            _typeNameTable[5] = "MagicBox.ViewModels.MainViewModel";
+            _typeNameTable[6] = "MagicBox.ViewModels.SignInViewModel";
             _typeNameTable[7] = "MagicBox.ViewModels.ShellViewModel";
             _typeNameTable[8] = "MagicBox.Services.NavigationServiceEx";
-            _typeNameTable[9] = "MagicBox.Views.BlankPage";
+            _typeNameTable[9] = "MagicBox.Views.MainPage";
             _typeNameTable[10] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[11] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[12] = "MagicBox.Views.MainPage";
-            _typeNameTable[13] = "MagicBox.Helpers.EnumToBooleanConverter";
-            _typeNameTable[14] = "System.Type";
-            _typeNameTable[15] = "System.Reflection.MemberInfo";
-            _typeNameTable[16] = "MagicBox.Views.SettingsPage";
-            _typeNameTable[17] = "Microsoft.Xaml.Interactivity.Interaction";
-            _typeNameTable[18] = "Microsoft.Xaml.Interactivity.BehaviorCollection";
-            _typeNameTable[19] = "Windows.UI.Xaml.DependencyObjectCollection";
-            _typeNameTable[20] = "Windows.UI.Xaml.DependencyObject";
-            _typeNameTable[21] = "MagicBox.Helpers.NavHelper";
-            _typeNameTable[22] = "String";
-            _typeNameTable[23] = "Windows.UI.Xaml.Controls.NavigationViewItem";
-            _typeNameTable[24] = "Microsoft.Xaml.Interactions.Core.EventTriggerBehavior";
-            _typeNameTable[25] = "Microsoft.Xaml.Interactivity.Trigger";
-            _typeNameTable[26] = "Microsoft.Xaml.Interactivity.Behavior";
-            _typeNameTable[27] = "Microsoft.Xaml.Interactivity.ActionCollection";
-            _typeNameTable[28] = "Microsoft.Xaml.Interactions.Core.InvokeCommandAction";
-            _typeNameTable[29] = "System.Windows.Input.ICommand";
-            _typeNameTable[30] = "Windows.UI.Xaml.Data.IValueConverter";
-            _typeNameTable[31] = "MagicBox.Views.ShellPage";
+            _typeNameTable[12] = "MagicBox.Helpers.EnumToBooleanConverter";
+            _typeNameTable[13] = "System.Type";
+            _typeNameTable[14] = "System.Reflection.MemberInfo";
+            _typeNameTable[15] = "MagicBox.Views.SettingsPage";
+            _typeNameTable[16] = "Microsoft.Xaml.Interactivity.Interaction";
+            _typeNameTable[17] = "Microsoft.Xaml.Interactivity.BehaviorCollection";
+            _typeNameTable[18] = "Windows.UI.Xaml.DependencyObjectCollection";
+            _typeNameTable[19] = "Windows.UI.Xaml.DependencyObject";
+            _typeNameTable[20] = "MagicBox.Helpers.NavHelper";
+            _typeNameTable[21] = "String";
+            _typeNameTable[22] = "Windows.UI.Xaml.Controls.NavigationViewItem";
+            _typeNameTable[23] = "Microsoft.Xaml.Interactions.Core.EventTriggerBehavior";
+            _typeNameTable[24] = "Microsoft.Xaml.Interactivity.Trigger";
+            _typeNameTable[25] = "Microsoft.Xaml.Interactivity.Behavior";
+            _typeNameTable[26] = "Microsoft.Xaml.Interactivity.ActionCollection";
+            _typeNameTable[27] = "Microsoft.Xaml.Interactions.Core.InvokeCommandAction";
+            _typeNameTable[28] = "System.Windows.Input.ICommand";
+            _typeNameTable[29] = "Windows.UI.Xaml.Data.IValueConverter";
+            _typeNameTable[30] = "MagicBox.Views.ShellPage";
+            _typeNameTable[31] = "MagicBox.Views.SignInPage";
 
             _typeTable = new global::System.Type[32];
             _typeTable[0] = typeof(global::MagicBox.ViewModels.ViewModelLocator);
@@ -220,33 +220,33 @@ namespace MagicBox.MagicBox_XamlTypeInfo
             _typeTable[2] = typeof(global::MagicBox.ViewModels.SettingsViewModel);
             _typeTable[3] = typeof(global::GalaSoft.MvvmLight.ViewModelBase);
             _typeTable[4] = typeof(global::GalaSoft.MvvmLight.ObservableObject);
-            _typeTable[5] = typeof(global::MagicBox.ViewModels.BlankViewModel);
-            _typeTable[6] = typeof(global::MagicBox.ViewModels.MainViewModel);
+            _typeTable[5] = typeof(global::MagicBox.ViewModels.MainViewModel);
+            _typeTable[6] = typeof(global::MagicBox.ViewModels.SignInViewModel);
             _typeTable[7] = typeof(global::MagicBox.ViewModels.ShellViewModel);
             _typeTable[8] = typeof(global::MagicBox.Services.NavigationServiceEx);
-            _typeTable[9] = typeof(global::MagicBox.Views.BlankPage);
+            _typeTable[9] = typeof(global::MagicBox.Views.MainPage);
             _typeTable[10] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[11] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[12] = typeof(global::MagicBox.Views.MainPage);
-            _typeTable[13] = typeof(global::MagicBox.Helpers.EnumToBooleanConverter);
-            _typeTable[14] = typeof(global::System.Type);
-            _typeTable[15] = typeof(global::System.Reflection.MemberInfo);
-            _typeTable[16] = typeof(global::MagicBox.Views.SettingsPage);
-            _typeTable[17] = typeof(global::Microsoft.Xaml.Interactivity.Interaction);
-            _typeTable[18] = typeof(global::Microsoft.Xaml.Interactivity.BehaviorCollection);
-            _typeTable[19] = typeof(global::Windows.UI.Xaml.DependencyObjectCollection);
-            _typeTable[20] = typeof(global::Windows.UI.Xaml.DependencyObject);
-            _typeTable[21] = typeof(global::MagicBox.Helpers.NavHelper);
-            _typeTable[22] = typeof(global::System.String);
-            _typeTable[23] = typeof(global::Windows.UI.Xaml.Controls.NavigationViewItem);
-            _typeTable[24] = typeof(global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior);
-            _typeTable[25] = typeof(global::Microsoft.Xaml.Interactivity.Trigger);
-            _typeTable[26] = typeof(global::Microsoft.Xaml.Interactivity.Behavior);
-            _typeTable[27] = typeof(global::Microsoft.Xaml.Interactivity.ActionCollection);
-            _typeTable[28] = typeof(global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction);
-            _typeTable[29] = typeof(global::System.Windows.Input.ICommand);
-            _typeTable[30] = typeof(global::Windows.UI.Xaml.Data.IValueConverter);
-            _typeTable[31] = typeof(global::MagicBox.Views.ShellPage);
+            _typeTable[12] = typeof(global::MagicBox.Helpers.EnumToBooleanConverter);
+            _typeTable[13] = typeof(global::System.Type);
+            _typeTable[14] = typeof(global::System.Reflection.MemberInfo);
+            _typeTable[15] = typeof(global::MagicBox.Views.SettingsPage);
+            _typeTable[16] = typeof(global::Microsoft.Xaml.Interactivity.Interaction);
+            _typeTable[17] = typeof(global::Microsoft.Xaml.Interactivity.BehaviorCollection);
+            _typeTable[18] = typeof(global::Windows.UI.Xaml.DependencyObjectCollection);
+            _typeTable[19] = typeof(global::Windows.UI.Xaml.DependencyObject);
+            _typeTable[20] = typeof(global::MagicBox.Helpers.NavHelper);
+            _typeTable[21] = typeof(global::System.String);
+            _typeTable[22] = typeof(global::Windows.UI.Xaml.Controls.NavigationViewItem);
+            _typeTable[23] = typeof(global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior);
+            _typeTable[24] = typeof(global::Microsoft.Xaml.Interactivity.Trigger);
+            _typeTable[25] = typeof(global::Microsoft.Xaml.Interactivity.Behavior);
+            _typeTable[26] = typeof(global::Microsoft.Xaml.Interactivity.ActionCollection);
+            _typeTable[27] = typeof(global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction);
+            _typeTable[28] = typeof(global::System.Windows.Input.ICommand);
+            _typeTable[29] = typeof(global::Windows.UI.Xaml.Data.IValueConverter);
+            _typeTable[30] = typeof(global::MagicBox.Views.ShellPage);
+            _typeTable[31] = typeof(global::MagicBox.Views.SignInPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -284,27 +284,27 @@ namespace MagicBox.MagicBox_XamlTypeInfo
         private object Activate_0_ViewModelLocator() { return new global::MagicBox.ViewModels.ViewModelLocator(); }
         private object Activate_2_SettingsViewModel() { return new global::MagicBox.ViewModels.SettingsViewModel(); }
         private object Activate_4_ObservableObject() { return new global::GalaSoft.MvvmLight.ObservableObject(); }
-        private object Activate_5_BlankViewModel() { return new global::MagicBox.ViewModels.BlankViewModel(); }
-        private object Activate_6_MainViewModel() { return new global::MagicBox.ViewModels.MainViewModel(); }
+        private object Activate_5_MainViewModel() { return new global::MagicBox.ViewModels.MainViewModel(); }
+        private object Activate_6_SignInViewModel() { return new global::MagicBox.ViewModels.SignInViewModel(); }
         private object Activate_7_ShellViewModel() { return new global::MagicBox.ViewModels.ShellViewModel(); }
         private object Activate_8_NavigationServiceEx() { return new global::MagicBox.Services.NavigationServiceEx(); }
-        private object Activate_9_BlankPage() { return new global::MagicBox.Views.BlankPage(); }
-        private object Activate_12_MainPage() { return new global::MagicBox.Views.MainPage(); }
-        private object Activate_13_EnumToBooleanConverter() { return new global::MagicBox.Helpers.EnumToBooleanConverter(); }
-        private object Activate_16_SettingsPage() { return new global::MagicBox.Views.SettingsPage(); }
-        private object Activate_18_BehaviorCollection() { return new global::Microsoft.Xaml.Interactivity.BehaviorCollection(); }
-        private object Activate_21_NavHelper() { return new global::MagicBox.Helpers.NavHelper(); }
-        private object Activate_24_EventTriggerBehavior() { return new global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior(); }
-        private object Activate_27_ActionCollection() { return new global::Microsoft.Xaml.Interactivity.ActionCollection(); }
-        private object Activate_28_InvokeCommandAction() { return new global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction(); }
-        private object Activate_31_ShellPage() { return new global::MagicBox.Views.ShellPage(); }
-        private void VectorAdd_18_BehaviorCollection(object instance, object item)
+        private object Activate_9_MainPage() { return new global::MagicBox.Views.MainPage(); }
+        private object Activate_12_EnumToBooleanConverter() { return new global::MagicBox.Helpers.EnumToBooleanConverter(); }
+        private object Activate_15_SettingsPage() { return new global::MagicBox.Views.SettingsPage(); }
+        private object Activate_17_BehaviorCollection() { return new global::Microsoft.Xaml.Interactivity.BehaviorCollection(); }
+        private object Activate_20_NavHelper() { return new global::MagicBox.Helpers.NavHelper(); }
+        private object Activate_23_EventTriggerBehavior() { return new global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior(); }
+        private object Activate_26_ActionCollection() { return new global::Microsoft.Xaml.Interactivity.ActionCollection(); }
+        private object Activate_27_InvokeCommandAction() { return new global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction(); }
+        private object Activate_30_ShellPage() { return new global::MagicBox.Views.ShellPage(); }
+        private object Activate_31_SignInPage() { return new global::MagicBox.Views.SignInPage(); }
+        private void VectorAdd_17_BehaviorCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.DependencyObject>)instance;
             var newItem = (global::Windows.UI.Xaml.DependencyObject)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_27_ActionCollection(object instance, object item)
+        private void VectorAdd_26_ActionCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.DependencyObject>)instance;
             var newItem = (global::Windows.UI.Xaml.DependencyObject)item;
@@ -325,8 +325,8 @@ namespace MagicBox.MagicBox_XamlTypeInfo
                 userType = new global::MagicBox.MagicBox_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.Activator = Activate_0_ViewModelLocator;
                 userType.AddMemberName("SettingsViewModel");
-                userType.AddMemberName("BlankViewModel");
                 userType.AddMemberName("MainViewModel");
+                userType.AddMemberName("SignInViewModel");
                 userType.AddMemberName("ShellViewModel");
                 userType.AddMemberName("NavigationService");
                 userType.SetIsLocalType();
@@ -355,14 +355,14 @@ namespace MagicBox.MagicBox_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 5:   //  MagicBox.ViewModels.BlankViewModel
+            case 5:   //  MagicBox.ViewModels.MainViewModel
                 userType = new global::MagicBox.MagicBox_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("GalaSoft.MvvmLight.ViewModelBase"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 6:   //  MagicBox.ViewModels.MainViewModel
+            case 6:   //  MagicBox.ViewModels.SignInViewModel
                 userType = new global::MagicBox.MagicBox_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("GalaSoft.MvvmLight.ViewModelBase"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
@@ -383,9 +383,9 @@ namespace MagicBox.MagicBox_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 9:   //  MagicBox.Views.BlankPage
+            case 9:   //  MagicBox.Views.MainPage
                 userType = new global::MagicBox.MagicBox_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_9_BlankPage;
+                userType.Activator = Activate_9_MainPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -398,108 +398,101 @@ namespace MagicBox.MagicBox_XamlTypeInfo
                 xamlType = new global::MagicBox.MagicBox_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 12:   //  MagicBox.Views.MainPage
-                userType = new global::MagicBox.MagicBox_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_12_MainPage;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 13:   //  MagicBox.Helpers.EnumToBooleanConverter
+            case 12:   //  MagicBox.Helpers.EnumToBooleanConverter
                 userType = new global::MagicBox.MagicBox_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_13_EnumToBooleanConverter;
+                userType.Activator = Activate_12_EnumToBooleanConverter;
                 userType.AddMemberName("EnumType");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 14:   //  System.Type
+            case 13:   //  System.Type
                 userType = new global::MagicBox.MagicBox_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Reflection.MemberInfo"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 15:   //  System.Reflection.MemberInfo
+            case 14:   //  System.Reflection.MemberInfo
                 userType = new global::MagicBox.MagicBox_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 xamlType = userType;
                 break;
 
-            case 16:   //  MagicBox.Views.SettingsPage
+            case 15:   //  MagicBox.Views.SettingsPage
                 userType = new global::MagicBox.MagicBox_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_16_SettingsPage;
+                userType.Activator = Activate_15_SettingsPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 17:   //  Microsoft.Xaml.Interactivity.Interaction
+            case 16:   //  Microsoft.Xaml.Interactivity.Interaction
                 userType = new global::MagicBox.MagicBox_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.AddMemberName("Behaviors");
                 xamlType = userType;
                 break;
 
-            case 18:   //  Microsoft.Xaml.Interactivity.BehaviorCollection
+            case 17:   //  Microsoft.Xaml.Interactivity.BehaviorCollection
                 userType = new global::MagicBox.MagicBox_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObjectCollection"));
-                userType.CollectionAdd = VectorAdd_18_BehaviorCollection;
+                userType.CollectionAdd = VectorAdd_17_BehaviorCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 19:   //  Windows.UI.Xaml.DependencyObjectCollection
+            case 18:   //  Windows.UI.Xaml.DependencyObjectCollection
                 xamlType = new global::MagicBox.MagicBox_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 20:   //  Windows.UI.Xaml.DependencyObject
+            case 19:   //  Windows.UI.Xaml.DependencyObject
                 xamlType = new global::MagicBox.MagicBox_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 21:   //  MagicBox.Helpers.NavHelper
+            case 20:   //  MagicBox.Helpers.NavHelper
                 userType = new global::MagicBox.MagicBox_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_21_NavHelper;
+                userType.Activator = Activate_20_NavHelper;
                 userType.AddMemberName("NavigateTo");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 22:   //  String
+            case 21:   //  String
                 xamlType = new global::MagicBox.MagicBox_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 23:   //  Windows.UI.Xaml.Controls.NavigationViewItem
+            case 22:   //  Windows.UI.Xaml.Controls.NavigationViewItem
                 xamlType = new global::MagicBox.MagicBox_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 24:   //  Microsoft.Xaml.Interactions.Core.EventTriggerBehavior
+            case 23:   //  Microsoft.Xaml.Interactions.Core.EventTriggerBehavior
                 userType = new global::MagicBox.MagicBox_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.Xaml.Interactivity.Trigger"));
-                userType.Activator = Activate_24_EventTriggerBehavior;
+                userType.Activator = Activate_23_EventTriggerBehavior;
                 userType.SetContentPropertyName("Microsoft.Xaml.Interactivity.Trigger.Actions");
                 userType.AddMemberName("EventName");
                 userType.AddMemberName("SourceObject");
                 xamlType = userType;
                 break;
 
-            case 25:   //  Microsoft.Xaml.Interactivity.Trigger
+            case 24:   //  Microsoft.Xaml.Interactivity.Trigger
                 userType = new global::MagicBox.MagicBox_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.Xaml.Interactivity.Behavior"));
                 userType.SetContentPropertyName("Microsoft.Xaml.Interactivity.Trigger.Actions");
                 userType.AddMemberName("Actions");
                 xamlType = userType;
                 break;
 
-            case 26:   //  Microsoft.Xaml.Interactivity.Behavior
+            case 25:   //  Microsoft.Xaml.Interactivity.Behavior
                 userType = new global::MagicBox.MagicBox_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
                 userType.AddMemberName("AssociatedObject");
                 xamlType = userType;
                 break;
 
-            case 27:   //  Microsoft.Xaml.Interactivity.ActionCollection
+            case 26:   //  Microsoft.Xaml.Interactivity.ActionCollection
                 userType = new global::MagicBox.MagicBox_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObjectCollection"));
-                userType.CollectionAdd = VectorAdd_27_ActionCollection;
+                userType.CollectionAdd = VectorAdd_26_ActionCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 28:   //  Microsoft.Xaml.Interactions.Core.InvokeCommandAction
+            case 27:   //  Microsoft.Xaml.Interactions.Core.InvokeCommandAction
                 userType = new global::MagicBox.MagicBox_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_28_InvokeCommandAction;
+                userType.Activator = Activate_27_InvokeCommandAction;
                 userType.AddMemberName("Command");
                 userType.AddMemberName("CommandParameter");
                 userType.AddMemberName("InputConverter");
@@ -508,19 +501,26 @@ namespace MagicBox.MagicBox_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 29:   //  System.Windows.Input.ICommand
+            case 28:   //  System.Windows.Input.ICommand
                 userType = new global::MagicBox.MagicBox_XamlTypeInfo.XamlUserType(this, typeName, type, null);
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 30:   //  Windows.UI.Xaml.Data.IValueConverter
+            case 29:   //  Windows.UI.Xaml.Data.IValueConverter
                 xamlType = new global::MagicBox.MagicBox_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 31:   //  MagicBox.Views.ShellPage
+            case 30:   //  MagicBox.Views.ShellPage
                 userType = new global::MagicBox.MagicBox_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_31_ShellPage;
+                userType.Activator = Activate_30_ShellPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 31:   //  MagicBox.Views.SignInPage
+                userType = new global::MagicBox.MagicBox_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_31_SignInPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -534,15 +534,15 @@ namespace MagicBox.MagicBox_XamlTypeInfo
             var that = (global::MagicBox.ViewModels.ViewModelLocator)instance;
             return that.SettingsViewModel;
         }
-        private object get_1_ViewModelLocator_BlankViewModel(object instance)
-        {
-            var that = (global::MagicBox.ViewModels.ViewModelLocator)instance;
-            return that.BlankViewModel;
-        }
-        private object get_2_ViewModelLocator_MainViewModel(object instance)
+        private object get_1_ViewModelLocator_MainViewModel(object instance)
         {
             var that = (global::MagicBox.ViewModels.ViewModelLocator)instance;
             return that.MainViewModel;
+        }
+        private object get_2_ViewModelLocator_SignInViewModel(object instance)
+        {
+            var that = (global::MagicBox.ViewModels.ViewModelLocator)instance;
+            return that.SignInViewModel;
         }
         private object get_3_ViewModelLocator_ShellViewModel(object instance)
         {
@@ -674,16 +674,16 @@ namespace MagicBox.MagicBox_XamlTypeInfo
                 xamlMember.Getter = get_0_ViewModelLocator_SettingsViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
-            case "MagicBox.ViewModels.ViewModelLocator.BlankViewModel":
-                userType = (global::MagicBox.MagicBox_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MagicBox.ViewModels.ViewModelLocator");
-                xamlMember = new global::MagicBox.MagicBox_XamlTypeInfo.XamlMember(this, "BlankViewModel", "MagicBox.ViewModels.BlankViewModel");
-                xamlMember.Getter = get_1_ViewModelLocator_BlankViewModel;
-                xamlMember.SetIsReadOnly();
-                break;
             case "MagicBox.ViewModels.ViewModelLocator.MainViewModel":
                 userType = (global::MagicBox.MagicBox_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MagicBox.ViewModels.ViewModelLocator");
                 xamlMember = new global::MagicBox.MagicBox_XamlTypeInfo.XamlMember(this, "MainViewModel", "MagicBox.ViewModels.MainViewModel");
-                xamlMember.Getter = get_2_ViewModelLocator_MainViewModel;
+                xamlMember.Getter = get_1_ViewModelLocator_MainViewModel;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "MagicBox.ViewModels.ViewModelLocator.SignInViewModel":
+                userType = (global::MagicBox.MagicBox_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MagicBox.ViewModels.ViewModelLocator");
+                xamlMember = new global::MagicBox.MagicBox_XamlTypeInfo.XamlMember(this, "SignInViewModel", "MagicBox.ViewModels.SignInViewModel");
+                xamlMember.Getter = get_2_ViewModelLocator_SignInViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             case "MagicBox.ViewModels.ViewModelLocator.ShellViewModel":

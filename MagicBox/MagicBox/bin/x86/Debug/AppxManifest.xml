@@ -7,8 +7,8 @@
 
   有关程序包清单文件的详细信息，请参阅 http://go.microsoft.com/fwlink/?LinkID=241727
  -->
-  <Identity Name="C07C90AA-0A20-4D94-A609-35EC2EBD63D0" Publisher="CN=zhangxiaofan" Version="1.0.0.0" ProcessorArchitecture="x86" />
-  <mp:PhoneIdentity PhoneProductId="C07C90AA-0A20-4D94-A609-35EC2EBD63D0" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+  <Identity Name="554C72F9-CDCA-4F66-BBEE-4A817122A4B4" Publisher="CN=zhangxiaofan" Version="1.0.0.0" ProcessorArchitecture="x86" />
+  <mp:PhoneIdentity PhoneProductId="554C72F9-CDCA-4F66-BBEE-4A817122A4B4" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>MagicBox</DisplayName>
     <PublisherDisplayName>zhangxiaofan</PublisherDisplayName>
@@ -47,7 +47,7 @@
     <build:Item Name="VisualStudioEdition" Value="Microsoft Visual Studio Community 2017" />
     <build:Item Name="OperatingSystem" Version="10.0.17134.103 (WinBuild.160101.0800)" />
     <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="15.0.27428.2005" />
-    <build:Item Name="ProjectGUID" Value="{C4B0995A-CD50-403D-B363-5605AB85D687}" />
+    <build:Item Name="ProjectGUID" Value="{58177635-36C6-4E5C-9C40-EB7462FE16BA}" />
     <build:Item Name="OptimizingToolset" Value="None" />
     <build:Item Name="TargetRuntime" Value="Managed" />
     <build:Item Name="Microsoft.Windows.UI.Xaml.Build.Tasks.dll" Version="15.0.27428.2005" />
