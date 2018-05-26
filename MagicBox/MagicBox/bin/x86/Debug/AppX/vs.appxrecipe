@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>554C72F9-CDCA-4F66-BBEE-4A817122A4B4</PackageIdentityName>
     <PackageIdentityPublisher>CN=zhangxiaofan</PackageIdentityPublisher>
-    <IntermediateOutputPath>D:\vs2017_work\MagicBox\MagicBox\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>D:\Github\MagicBox\MagicBox\MagicBox\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -18,7 +18,7 @@
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>D:\vs2017_work\MagicBox\MagicBox\bin\x86\Debug\AppX</LayoutDir>
+    <LayoutDir>D:\Github\MagicBox\MagicBox\MagicBox\bin\x86\Debug\AppX</LayoutDir>
     <RegisteredManifestChecksum>CB786C1FE92C4B2B3E05077D761FB3CD3DFB3BE73E973EBDF9C511AA785132DE</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>554C72F9-CDCA-4F66-BBEE-4A817122A4B4_1.0.0.0_x86__2kezcymc865ka</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>554C72F9-CDCA-4F66-BBEE-4A817122A4B4_2kezcymc865ka!App</RegisteredUserModeAppID>
@@ -28,16 +28,16 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="D:\vs2017_work\MagicBox\MagicBox\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="D:\Github\MagicBox\MagicBox\MagicBox\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-05-25T06:36:41.679</Modified>
+      <Modified>2018-05-26T08:31:41.212</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="D:\vs2017_work\MagicBox\MagicBox\bin\x86\Debug\MagicBox.exe">
+    <AppxPackagedFile Include="D:\Github\MagicBox\MagicBox\MagicBox\bin\x86\Debug\MagicBox.exe">
       <PackagePath>entrypoint\MagicBox.exe</PackagePath>
-      <Modified>2018-05-25T06:36:39.539</Modified>
+      <Modified>2018-05-26T08:31:39.867</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\zhangxiaofan\.nuget\packages\commonservicelocator\2.0.2\lib\netstandard2.0\CommonServiceLocator.dll">
       <PackagePath>CommonServiceLocator.dll</PackagePath>
@@ -727,68 +727,72 @@
       <PackagePath>netstandard.dll</PackagePath>
       <Modified>2018-02-23T07:22:04.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\vs2017_work\MagicBox\MagicBox\Assets\example.jpg">
+    <AppxPackagedFile Include="D:\Github\MagicBox\MagicBox\MagicBox\Assets\cover.jpg">
+      <PackagePath>Assets\cover.jpg</PackagePath>
+      <Modified>2018-05-26T08:24:22.097</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Github\MagicBox\MagicBox\MagicBox\Assets\example.jpg">
       <PackagePath>Assets\example.jpg</PackagePath>
       <Modified>2018-05-25T03:52:54.410</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\vs2017_work\MagicBox\MagicBox\Assets\example.mp3">
+    <AppxPackagedFile Include="D:\Github\MagicBox\MagicBox\MagicBox\Assets\example.mp3">
       <PackagePath>Assets\example.mp3</PackagePath>
-      <Modified>2018-05-25T03:52:54.584</Modified>
+      <Modified>2018-05-25T07:05:58.824</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\vs2017_work\MagicBox\MagicBox\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="D:\Github\MagicBox\MagicBox\MagicBox\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
       <Modified>2018-05-25T03:44:36.188</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\vs2017_work\MagicBox\MagicBox\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="D:\Github\MagicBox\MagicBox\MagicBox\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
       <Modified>2018-05-25T03:44:36.033</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\vs2017_work\MagicBox\MagicBox\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="D:\Github\MagicBox\MagicBox\MagicBox\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-05-25T03:44:36.041</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\vs2017_work\MagicBox\MagicBox\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\Github\MagicBox\MagicBox\MagicBox\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-05-25T03:44:36.048</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\vs2017_work\MagicBox\MagicBox\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\Github\MagicBox\MagicBox\MagicBox\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-05-25T03:44:36.054</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\vs2017_work\MagicBox\MagicBox\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="D:\Github\MagicBox\MagicBox\MagicBox\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-05-25T03:44:36.057</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\vs2017_work\MagicBox\MagicBox\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="D:\Github\MagicBox\MagicBox\MagicBox\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-05-25T03:44:36.063</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\vs2017_work\MagicBox\MagicBox\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\Github\MagicBox\MagicBox\MagicBox\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-05-25T03:44:36.067</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\vs2017_work\MagicBox\MagicBox\bin\x86\Debug\MagicBox.xr.xml">
+    <AppxPackagedFile Include="D:\Github\MagicBox\MagicBox\MagicBox\bin\x86\Debug\MagicBox.xr.xml">
       <PackagePath>MagicBox.xr.xml</PackagePath>
-      <Modified>2018-05-25T06:36:39.027</Modified>
+      <Modified>2018-05-26T08:30:43.116</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.16299.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2017-09-28T09:28:16.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\vs2017_work\MagicBox\MagicBox\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="D:\Github\MagicBox\MagicBox\MagicBox\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-05-25T06:36:40.469</Modified>
+      <Modified>2018-05-26T08:31:40.429</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\vs2017_work\MagicBox\MagicBox\bin\x86\Debug\Core\MagicBox.exe">
+    <AppxPackagedFile Include="D:\Github\MagicBox\MagicBox\MagicBox\bin\x86\Debug\Core\MagicBox.exe">
       <PackagePath>MagicBox.exe</PackagePath>
-      <Modified>2018-05-25T06:36:41.669</Modified>
+      <Modified>2018-05-26T08:31:41.206</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

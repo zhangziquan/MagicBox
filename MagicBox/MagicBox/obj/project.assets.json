@@ -12766,11 +12766,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\vs2017_work\\MagicBox\\MagicBox\\MagicBox.csproj",
+      "projectUniqueName": "D:\\Github\\MagicBox\\MagicBox\\MagicBox\\MagicBox.csproj",
       "projectName": "MagicBox",
-      "projectPath": "D:\\vs2017_work\\MagicBox\\MagicBox\\MagicBox.csproj",
+      "projectPath": "D:\\Github\\MagicBox\\MagicBox\\MagicBox\\MagicBox.csproj",
       "packagesPath": "C:\\Users\\zhangxiaofan\\.nuget\\packages\\",
-      "outputPath": "D:\\vs2017_work\\MagicBox\\MagicBox\\obj\\",
+      "outputPath": "D:\\Github\\MagicBox\\MagicBox\\MagicBox\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [

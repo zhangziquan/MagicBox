@@ -32,14 +32,14 @@
                         <ColumnDefinition Width="1*"/>
                         <ColumnDefinition Width="1*"/>
                     </Grid.ColumnDefinitions>
-                    <TextBox x:Name="searchTextBox" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" MinWidth="100" Height="36"   FontSize="16" />
+                    <TextBox x:Name="searchTextBox" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Width="120" Height="36"   FontSize="16" />
                     <Button x:Name="searchButton" Grid.Column="1" Content="search" HorizontalAlignment="Center" MinWidth="100" Width="120" Height="36" />
                 </Grid>
                 <ListView x:Name="listView" Grid.Row="1" IsItemClickEnabled="True" ItemClick="ListViewItemClick" ItemsSource="{x:Bind ViewModel.AllItems}">
                     <ListView.ItemTemplate>
                         <DataTemplate x:DataType="md:Model">
                             <UserControl>
-                                <Grid Height="150" Width="auto" >
+                                <Grid Height="120" Width="auto" >
                                     <Grid.ColumnDefinitions>
                                         <ColumnDefinition Width="42*" />
                                         <ColumnDefinition Width="15" />
@@ -53,7 +53,7 @@
                                             <RowDefinition Height="5*" />
                                             <RowDefinition Height="5*" />
                                         </Grid.RowDefinitions>
-                                        <TextBlock x:Name="musicTextBlockListView" Grid.Row="1" Text="mood"/>
+                                        <TextBlock x:Name="musicTextBlockListView" Grid.Row="1" Text="music"/>
                                         <TextBlock x:Name="dateTextBlockListView" Grid.Row="2" Text="2018/5/17" />
                                     </Grid>
                                 </Grid>
@@ -66,50 +66,60 @@
                         <ColumnDefinition Width="1*"/>
                         <ColumnDefinition Width="1*"/>
                     </Grid.ColumnDefinitions>
-                    <Button x:Name="createButton"  Grid.Column="0" Content="create" HorizontalAlignment="Center" Width="100" Height="36"/>
-                    <Button x:Name="cancelButton" Grid.Column="1" Content="cancel" HorizontalAlignment="Center"  Width="100" Height="36"/>
+                    <Button x:Name="createButton"  Grid.Column="0" Content="create" HorizontalAlignment="Center" Width="120" Height="36" VerticalAlignment="Bottom"/>
+                    <Button x:Name="cancelButton" Grid.Column="1" Content="cancel" HorizontalAlignment="Center"  Width="120" Height="36" VerticalAlignment="Bottom"/>
                 </Grid>
             </Grid>
 
             <Grid Grid.Column="1" Grid.Row="0">
                 <Grid.RowDefinitions >
-                    <RowDefinition Height="200"/>
-                    <RowDefinition Height="1*" />
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="8*" />
                 </Grid.RowDefinitions>
                 <Grid Grid.Row="0">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="5*"/>
                         <ColumnDefinition Width="5*" />
                     </Grid.ColumnDefinitions>
-                    <Image x:Name="photoImageDetail" Grid.Column="0" Source="/Assets/example.jpg"/>
+                    <Button x:Name="photoButton"   Grid.Column="0"  Background="AliceBlue" >
+                        <Button.Content>
+                            <Image Source="/Assets/example.jpg" />
+                        </Button.Content>
+                    </Button>
                     <Grid Grid.Column="1">
                         <Grid.RowDefinitions>
                             <RowDefinition Height="1*"/>
-                            <RowDefinition Height="1*"/>
-                            <RowDefinition Height="1*"/>
+                            <RowDefinition Height="2*"/>
+                            <RowDefinition Height="2*"/>
+                            <RowDefinition Height="2*"/>
                             <RowDefinition Height="1*"/>
                         </Grid.RowDefinitions>
-                        <TextBlock x:Name="moodTextBlockDetail" Grid.Row="1" Text="happy"/>
-                        <DatePicker x:Name="dateDatePickerDetail" Grid.Row="2" />
+                        <TextBlock x:Name="moodTextBlockDetail" Grid.Row="1" Text="happy" />
+                        <TextBlock x:Name="feedbackTextBlock"  Grid.Row="2"  Text="feedback" HorizontalAlignment="Stretch"/>
+                        <DatePicker x:Name="dateDatePickerDetail" Grid.Row="3" />
                     </Grid>
                 </Grid>
-                <TextBox x:Name="diaryTextBoxDetail" Grid.Row="1"  TextWrapping="Wrap" FontFamily="Microsoft YaHei" FontSize="36"  Text="diary" />
+                <TextBox x:Name="diaryTextBoxDetail" Grid.Row="1"  TextWrapping="Wrap" FontFamily="Microsoft YaHei" FontSize="36"  Text="diary" BorderThickness="0,0,0,0" />
             </Grid>
             <Grid Grid.Row="1" Grid.ColumnSpan="2">
                 <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.3*"/>
                     <ColumnDefinition Width="2*"/>
                     <ColumnDefinition Width="2*"/>
-                    <ColumnDefinition Width="3*"/>
-                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="4*"/>
                     <ColumnDefinition Width="1*"/>
                     <ColumnDefinition Width="1*"/>
                 </Grid.ColumnDefinitions>
-                <Image x:Name="coverImage" Grid.Column="0" Source="/Assets/example.jpg" HorizontalAlignment="Center" VerticalAlignment="Center" />
-                <TextBlock x:Name="musicNameTextBlock" Grid.Column="1" Text="music name" HorizontalAlignment="Center" VerticalAlignment="Center" />
-                <Slider x:Name="musicSlider" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Maximum="100" MaxWidth="400" Width="200" />
-                <AppBarButton x:Name="previousButton" Grid.Column="3" Icon="Previous" HorizontalAlignment="Center" VerticalAlignment="Center" />
-                <AppBarButton x:Name="playButton" Grid.Column="4" Icon="Play" HorizontalAlignment="Center" VerticalAlignment="Center" />
-                <AppBarButton x:Name="nextButton" Grid.Column="5" Icon="Next" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <MediaPlayerElement x:Name="mediaPlayerElement" AutoPlay="True" AreTransportControlsEnabled="False" />
+                <Ellipse Grid.Column="1" Width="100" Height="100" HorizontalAlignment="Left" VerticalAlignment="Center">
+                    <Ellipse.Fill>
+                        <ImageBrush x:Name="coverImage" ImageSource="/Assets/cover.jpg"  />
+                    </Ellipse.Fill>
+                </Ellipse>
+                <TextBlock x:Name="musicNameTextBlock" Grid.Column="2" Text="music name" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                <Slider x:Name="musicSlider" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Maximum="100" MaxWidth="400" Width="300" />
+                <AppBarButton Grid.Column="4" Icon="Play" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                <AppBarButton Grid.Column="5" Icon="OpenFile" HorizontalAlignment="Center" VerticalAlignment="Center"/>
             </Grid>
             <!--The SystemControlPageBackgroundChromeLowBrush background represents where you should place your content. 
                 Place your content here.-->

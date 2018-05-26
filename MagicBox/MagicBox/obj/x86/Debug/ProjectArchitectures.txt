@@ -1,1 +1,1 @@
-D:\vs2017_work\MagicBox\MagicBox\MagicBox.csproj;x86
+D:\Github\MagicBox\MagicBox\MagicBox\MagicBox.csproj;x86

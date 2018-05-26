@@ -10,22 +10,22 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>554C72F9-CDCA-4F66-BBEE-4A817122A4B4</PackageIdentityName>
     <PackageIdentityPublisher>CN=zhangxiaofan</PackageIdentityPublisher>
-    <IntermediateOutputPath>D:\vs2017_work\MagicBox\MagicBox\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>D:\Github\MagicBox\MagicBox\MagicBox\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>D:\vs2017_work\MagicBox\MagicBox\bin\x86\Debug\AppX</LayoutDir>
+    <LayoutDir>D:\Github\MagicBox\MagicBox\MagicBox\bin\x86\Debug\AppX</LayoutDir>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="D:\vs2017_work\MagicBox\MagicBox\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="D:\Github\MagicBox\MagicBox\MagicBox\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="D:\vs2017_work\MagicBox\MagicBox\bin\x86\Debug\MagicBox.exe">
+    <AppxPackagedFile Include="D:\Github\MagicBox\MagicBox\MagicBox\bin\x86\Debug\MagicBox.exe">
       <PackagePath>entrypoint\MagicBox.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\zhangxiaofan\.nuget\packages\commonservicelocator\2.0.2\lib\netstandard2.0\CommonServiceLocator.dll">
@@ -544,53 +544,56 @@
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\NuGetPackagesFallback\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.0.8\runtimes\win10-x86\lib\uap10.0.15138\netstandard.dll">
       <PackagePath>netstandard.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\vs2017_work\MagicBox\MagicBox\Assets\example.jpg">
+    <AppxPackagedFile Include="D:\Github\MagicBox\MagicBox\MagicBox\Assets\cover.jpg">
+      <PackagePath>Assets\cover.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Github\MagicBox\MagicBox\MagicBox\Assets\example.jpg">
       <PackagePath>Assets\example.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\vs2017_work\MagicBox\MagicBox\Assets\example.mp3">
+    <AppxPackagedFile Include="D:\Github\MagicBox\MagicBox\MagicBox\Assets\example.mp3">
       <PackagePath>Assets\example.mp3</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\vs2017_work\MagicBox\MagicBox\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="D:\Github\MagicBox\MagicBox\MagicBox\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\vs2017_work\MagicBox\MagicBox\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="D:\Github\MagicBox\MagicBox\MagicBox\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\vs2017_work\MagicBox\MagicBox\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="D:\Github\MagicBox\MagicBox\MagicBox\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\vs2017_work\MagicBox\MagicBox\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\Github\MagicBox\MagicBox\MagicBox\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\vs2017_work\MagicBox\MagicBox\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\Github\MagicBox\MagicBox\MagicBox\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\vs2017_work\MagicBox\MagicBox\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="D:\Github\MagicBox\MagicBox\MagicBox\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\vs2017_work\MagicBox\MagicBox\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="D:\Github\MagicBox\MagicBox\MagicBox\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\vs2017_work\MagicBox\MagicBox\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\Github\MagicBox\MagicBox\MagicBox\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\vs2017_work\MagicBox\MagicBox\bin\x86\Debug\MagicBox.xr.xml">
+    <AppxPackagedFile Include="D:\Github\MagicBox\MagicBox\MagicBox\bin\x86\Debug\MagicBox.xr.xml">
       <PackagePath>MagicBox.xr.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.16299.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\vs2017_work\MagicBox\MagicBox\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="D:\Github\MagicBox\MagicBox\MagicBox\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\vs2017_work\MagicBox\MagicBox\bin\x86\Debug\Core\MagicBox.exe">
+    <AppxPackagedFile Include="D:\Github\MagicBox\MagicBox\MagicBox\bin\x86\Debug\Core\MagicBox.exe">
       <PackagePath>MagicBox.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>
