@@ -31,13 +31,13 @@
     <AppXManifest Include="D:\Github\MagicBox\MagicBox\MagicBox\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-05-26T08:31:41.212</Modified>
+      <Modified>2018-05-26T11:25:43.963</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\Github\MagicBox\MagicBox\MagicBox\bin\x86\Debug\MagicBox.exe">
       <PackagePath>entrypoint\MagicBox.exe</PackagePath>
-      <Modified>2018-05-26T08:31:39.867</Modified>
+      <Modified>2018-05-26T11:25:42.466</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\zhangxiaofan\.nuget\packages\commonservicelocator\2.0.2\lib\netstandard2.0\CommonServiceLocator.dll">
       <PackagePath>CommonServiceLocator.dll</PackagePath>
@@ -779,7 +779,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Github\MagicBox\MagicBox\MagicBox\bin\x86\Debug\MagicBox.xr.xml">
       <PackagePath>MagicBox.xr.xml</PackagePath>
-      <Modified>2018-05-26T08:30:43.116</Modified>
+      <Modified>2018-05-26T11:25:42.144</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.16299.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -788,11 +788,11 @@
     <AppxPackagedFile Include="D:\Github\MagicBox\MagicBox\MagicBox\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-05-26T08:31:40.429</Modified>
+      <Modified>2018-05-26T11:25:43.003</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Github\MagicBox\MagicBox\MagicBox\bin\x86\Debug\Core\MagicBox.exe">
       <PackagePath>MagicBox.exe</PackagePath>
-      <Modified>2018-05-26T08:31:41.206</Modified>
+      <Modified>2018-05-26T11:25:43.957</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
