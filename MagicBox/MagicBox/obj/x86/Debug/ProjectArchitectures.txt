@@ -1,1 +1,0 @@
-D:\Github\MagicBox\MagicBox\MagicBox\MagicBox.csproj;x86

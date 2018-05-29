@@ -108,12 +108,17 @@
     <PackageReference Include="MvvmLight">
       <Version>5.4.1</Version>
     </PackageReference>
+    <PackageReference Include="SQLitePCL">
+      <Version>3.8.7.2</Version>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <PRIResource Include="Strings\en-us\Resources.resw" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Activation\ActivationHandler.cs" />
+    <Compile Include="Converters\DateToString.cs" />
+    <Compile Include="Converters\UriToImage.cs" />
     <Compile Include="Helpers\EnumToBooleanConverter.cs" />
     <Compile Include="Helpers\Json.cs" />
     <Compile Include="Helpers\NavHelper.cs" />
@@ -200,7 +205,11 @@
     <Compile Include="Helpers\ResourceExtensions.cs" />
     <Compile Include="Helpers\Singleton.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <SDKReference Include="SQLite.UWP.2015, Version=3.23.1">
+      <Name>SQLite for Universal Windows Platform</Name>
+    </SDKReference>
+  </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\cover.jpg" />
     <Content Include="Assets\example.jpg" />

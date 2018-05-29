@@ -17,10 +17,30 @@ namespace MagicBox.Models
         private String _feedback;
         private String _id;
         private String _diary;
+        private String _musicName;
+        private String userName;
+
+        public String musicName
+        {
+            get
+            {
+                return _musicName;
+            }
+            set
+            {
+                _musicName = value;
+                RaisePropertyChanged("musicName");
+            }
+        }
 
         public String getId()
         {
             return _id;
+        }
+
+        public String getUserName()
+        {
+            return userName;
         }
 
         public DateTimeOffset date
@@ -103,13 +123,15 @@ namespace MagicBox.Models
             this._id = Guid.NewGuid().ToString();
             this.date = DateTime.Now.Date;
             this.songUri = new Uri("ms-appx:///Assets/example.mp3");
-            this.photoUri = new Uri("ms-appx:///Assets/example.png");
-            this.mood = "";
-            this.diary = "";
-            this.feedback = "";
+            this.photoUri = new Uri("ms-appx:///Assets/example.jpg");
+            this.mood = "sad";
+            this.diary = "好吧";
+            this.feedback = "啥子哟";
+            this._musicName = "不爱我就拉倒";
+            this.userName = App.userName;
         }
 
-        public Model(Uri songUri, Uri photoUri, String mood, String diary, String feedback)
+        public Model(Uri songUri, Uri photoUri, String mood, String diary, String feedback, String musicName)
         {
             this._id = Guid.NewGuid().ToString();
             this.date = DateTime.Now.Date;
@@ -118,9 +140,11 @@ namespace MagicBox.Models
             this.mood = mood;
             this.diary = diary;
             this.feedback = feedback;
+            this._musicName = musicName;
+            this.userName = App.userName;
         }
 
-        public Model(String id, DateTimeOffset date, Uri songUri, Uri photoUri, String mood, String diary, String feedback)
+        public Model(String id, DateTimeOffset date, Uri songUri, Uri photoUri, String mood, String diary, String feedback, String musicName)
         {
             this._id = id;
             this.date = date;
@@ -129,6 +153,8 @@ namespace MagicBox.Models
             this.mood = mood;
             this.diary = diary;
             this.feedback = feedback;
+            this._musicName = musicName;
+            this.userName = App.userName;
         }
 
         public event PropertyChangedEventHandler PropertyChanged;

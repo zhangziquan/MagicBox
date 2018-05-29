@@ -15,9 +15,9 @@
             <!--The SystemControlPageBackgroundChromeLowBrush background represents where you should place your content. 
                 Place your content here.-->
         </Grid>
-        <TextBox x:Name="userNameTextBox" Width="250" Header="username" Height="90" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,200"  FontSize="24" />
-        <TextBox x:Name="passwordTextBox" Width="250" Header="password"  Height="90" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0"  FontSize="24"/>
-        <Button x:Name="createButton" Content="create" Width="100" Height="50" HorizontalAlignment="Center" Margin="0,200,150,0"  FontSize="24"/>
-        <Button x:Name="cancelButton" Content="cancel" Width="100" Height="50" HorizontalAlignment="Center" Margin="150,200,0,0" FontSize="24"/>
+        <TextBox x:Name="userNameTextBox" Width="250" Header="用户名" Height="90" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,200"  FontSize="26" />
+        <PasswordBox x:Name="passwordBox" Width="250" Header="密码"  Height="90" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0"  FontSize="26"/>
+        <Button x:Name="LogInButton" Click="LogIn" Content="登陆" Width="100" Height="50" HorizontalAlignment="Center" Margin="0,200,150,0"  FontSize="24"/>
+        <Button x:Name="SignUpButton" Click="SignUp" Content="注册" Width="100" Height="50" HorizontalAlignment="Center" Margin="150,200,0,0" FontSize="24"/>
     </Grid>
 </Page>
