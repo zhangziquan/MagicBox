@@ -12,6 +12,12 @@ using Windows.Storage;
 using Windows.UI.Popups;
 using System.Text;
 using SQLitePCL;
+using Windows.Media.Capture;
+using System.IO;
+using System.Net.Http;
+using System.Net.Http.Headers;
+using Newtonsoft.Json.Linq;
+using Newtonsoft.Json;
 
 namespace MagicBox.Views
 {
@@ -78,11 +84,12 @@ namespace MagicBox.Views
                 IRandomAccessStream stream = await file.OpenAsync(FileAccessMode.Read);
                 if (type == ".mp3" || type == ".wma")
                 {
-                  //  mediaElement.Visibility = Visibility.Collapsed;
-                //    Play.Visibility = Visibility.Collapsed;
-                 //   Pause.Visibility = Visibility.Visible;
-                    await file.CopyAsync(ApplicationData.Current.LocalFolder, file.Name, NameCollisionOption.ReplaceExisting);
-                    Uri uri = new Uri("ms-appdata:///local/" + file.Name);
+                    //  mediaElement.Visibility = Visibility.Collapsed;
+                    //    Play.Visibility = Visibility.Collapsed;
+                    //   Pause.Visibility = Visibility.Visible;
+                    var filename = Guid.NewGuid().ToString();
+                    await file.CopyAsync(ApplicationData.Current.LocalFolder, filename, NameCollisionOption.ReplaceExisting);
+                    Uri uri = new Uri("ms-appdata:///local/" + filename);
                     musicNameTextBlock.Text = file.Name;
                     mediaElement.Source = uri;
                     mediaElement.Play();
@@ -112,6 +119,7 @@ namespace MagicBox.Views
             }
             else if(createButton.Content.ToString() == "Create")
             {
+                Uri x = (photoImageDetail.Source as BitmapImage).UriSource;
                 ViewModel.AddItem(mediaElement.Source, (photoImageDetail.Source as BitmapImage).UriSource,
                     moodTextBlockDetail.Text, diaryTextBoxDetail.Text, feedbackTextBlock.Text, musicNameTextBlock.Text);
                 var message = new MessageDialog("创建成功！").ShowAsync();
@@ -143,10 +151,19 @@ namespace MagicBox.Views
             var picture = await picker.PickSingleFileAsync();
             if (picture != null)
             {
-                string temp = picture.Name;
-                await picture.CopyAsync(ApplicationData.Current.LocalFolder, temp, NameCollisionOption.GenerateUniqueName);
+                var temp = Guid.NewGuid().ToString();
+                await picture.CopyAsync(ApplicationData.Current.LocalFolder, temp, NameCollisionOption.ReplaceExisting);
                 BitmapImage bitmapImage = new BitmapImage(new Uri("ms-appdata:///local/" + temp));
                 photoImageDetail.Source = bitmapImage;
+
+                IBuffer buffer = await FileIO.ReadBufferAsync(picture);
+                using (DataReader dr = DataReader.FromBuffer(buffer))
+                {
+                    byte[] byte_Data = new byte[dr.UnconsumedBufferLength];
+                    dr.ReadBytes(byte_Data);
+
+                    MakeRequest(byte_Data);
+                }
             }
         }
 
@@ -183,6 +200,100 @@ namespace MagicBox.Views
             }
             
             
+        }
+
+        private async void takePhotoClick(object sender, RoutedEventArgs e)
+        {
+            CameraCaptureUI captureUI = new CameraCaptureUI();
+            captureUI.PhotoSettings.Format = CameraCaptureUIPhotoFormat.Jpeg;
+            captureUI.PhotoSettings.AllowCropping = false;
+            //captureUI.PhotoSettings.MaxResolution = CameraCaptureUIMaxPhotoResolution.Large3M;
+
+            StorageFile picture = await captureUI.CaptureFileAsync(CameraCaptureUIMode.Photo);
+            if (picture != null)
+            {
+                var temp = Guid.NewGuid().ToString();
+                await picture.CopyAsync(ApplicationData.Current.LocalFolder, temp, NameCollisionOption.ReplaceExisting);
+                BitmapImage bitmapImage = new BitmapImage(new Uri("ms-appdata:///local/" + temp));
+                photoImageDetail.Source = bitmapImage;
+
+                IBuffer buffer = await FileIO.ReadBufferAsync(picture);
+                using (DataReader dr = DataReader.FromBuffer(buffer))
+                {
+                    byte[] byte_Data = new byte[dr.UnconsumedBufferLength];
+                    dr.ReadBytes(byte_Data);
+
+                    MakeRequest(byte_Data);
+                }
+            }
+        }
+
+        private async void MakeRequest(byte[] byteData)
+        {
+            var client = new HttpClient();
+
+            const string uriBase =
+            "https://westcentralus.api.cognitive.microsoft.com/face/v1.0/detect";
+            // Request headers - replace this example key with your valid key.
+            client.DefaultRequestHeaders.Add("Ocp-Apim-Subscription-Key", "5f571faff94e48f2a94e3b221d3bdaf8"); // 
+
+            // NOTE: You must use the same region in your REST call as you used to obtain your subscription keys.
+            //   For example, if you obtained your subscription keys from westcentralus, replace "westus" in the 
+            //   URI below with "westcentralus".
+            HttpResponseMessage response;
+
+            // Request body. Try this sample with a locally stored JPEG image.
+
+            string requestParameters = "returnFaceId=true&returnFaceLandmarks=false" +
+                "&returnFaceAttributes=age,gender,headPose,smile,facialHair,glasses," +
+                "emotion,hair,makeup,occlusion,accessories,blur,exposure,noise";
+
+            // Assemble the URI for the REST API Call.
+            string uri = uriBase + "?" + requestParameters;
+
+            // Request body. Posts a locally stored JPEG image.
+
+            using (ByteArrayContent content = new ByteArrayContent(byteData))
+            {
+                // This example uses content type "application/octet-stream".
+                // The other content types you can use are "application/json"
+                // and "multipart/form-data".
+                content.Headers.ContentType =
+                    new MediaTypeHeaderValue("application/octet-stream");
+
+                // Execute the REST API call.
+                response = await client.PostAsync(uri, content);
+
+                // Get the JSON response.
+                string contentString = await response.Content.ReadAsStringAsync();
+
+                // Display the JSON response.
+                JsonReader jsonReader = new JsonTextReader(new StringReader(contentString));
+                dynamic Data = Newtonsoft.Json.JsonConvert.DeserializeObject(contentString);
+                if(contentString =="[]")
+                {
+                    moodTextBlockDetail.Text = "detect emotion fail";
+                    return;
+                }
+                var face = Data[0];
+                var emotion = face.faceAttributes.emotion;
+                double max = 0;
+                var flag = -1;
+                var i = 0;
+                foreach(var item in emotion)
+                {
+                    String value = (String)item;
+                    double valuedata = double.Parse(value);
+                    if (valuedata > max)
+                    {
+                        max = valuedata;
+                        flag = i;
+                    }
+                    i++;
+                }
+                string[] emotions = new string[8] { "anger", "contempt", "disgust", "fear", "happiness", "neutral", "sadness", "surprise" };
+                moodTextBlockDetail.Text = emotions[flag];
+            }
         }
     }
 }

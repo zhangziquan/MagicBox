@@ -46,8 +46,9 @@
       <RootProperty Name="Text" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="Style" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="Style" />
+      <RootProperty Name="Inlines" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.FrameworkElement">
       <RootProperty Name="VerticalAlignment" />
@@ -61,13 +62,13 @@
     <RootType FullName="MagicBox.Converters.UriToImage" />
     <RootType FullName="Windows.UI.Xaml.Controls.Grid">
       <RootProperty Name="Margin" />
-      <RootProperty Name="MinWidth" />
-      <RootProperty Name="MinHeight" />
       <RootProperty Name="Children" />
       <RootProperty Name="Background" />
       <RootProperty Name="ColumnDefinitions" />
       <RootProperty Name="RowDefinitions" />
       <RootProperty Name="Name" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Height" />
       <RootProperty Name="Width" />
       <RootMethod Name="GetColumn" />
@@ -117,11 +118,12 @@
       <RootProperty Name="ImageSource" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
+      <RootProperty Name="PlaceholderText" />
       <RootProperty Name="TextWrapping" />
       <RootProperty Name="FontFamily" />
       <RootProperty Name="FontSize" />
-      <RootProperty Name="Text" />
       <RootProperty Name="BorderThickness" />
+      <RootProperty Name="FocusVisualSecondaryBrush" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Width" />
@@ -132,6 +134,7 @@
     <RootType FullName="Windows.UI.Xaml.Controls.Button">
       <RootProperty Name="Background" />
       <RootProperty Name="Content" />
+      <RootProperty Name="Flyout" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Width" />
       <RootProperty Name="Height" />
@@ -147,7 +150,18 @@
     <RootType FullName="Windows.UI.Xaml.Controls.Image">
       <RootProperty Name="Source" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Flyout">
+      <RootProperty Name="Content" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Children" />
+      <RootProperty Name="Margin" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ListView">
+      <RootProperty Name="MaxHeight" />
+      <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="IsItemClickEnabled" />
       <RootProperty Name="ItemsSource" />
       <RootProperty Name="ItemTemplate" />
@@ -167,10 +181,6 @@
     <RootType FullName="MagicBox.Views.MainPage" />
     <RootType FullName="MagicBox.Helpers.EnumToBooleanConverter">
       <RootProperty Name="EnumType" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
-      <RootProperty Name="Children" />
-      <RootProperty Name="Margin" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.HyperlinkButton">
       <RootProperty Name="Margin" />
@@ -214,6 +224,7 @@
     <RootType FullName="MagicBox.Views.ShellPage" />
     <RootType FullName="Windows.UI.Xaml.Controls.PasswordBox">
       <RootProperty Name="Width" />
+      <RootProperty Name="PlaceholderText" />
       <RootProperty Name="Header" />
       <RootProperty Name="Height" />
       <RootProperty Name="HorizontalAlignment" />

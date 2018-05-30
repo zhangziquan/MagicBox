@@ -17,7 +17,7 @@
     
     <Grid
         x:Name="ContentArea"
-        Margin="{StaticResource MediumLeftRightMargin}" MinWidth="400" MinHeight="400">
+        Margin="{StaticResource MediumLeftRightMargin}">
         <Grid
             Background="{ThemeResource SystemControlPageBackgroundChromeLowBrush}">
 
@@ -29,7 +29,7 @@
                             <Setter Target="leftView.(Grid.ColumnSpan)" Value="2" />
                         </VisualState.Setters>
                         <VisualState.StateTriggers>
-                            <AdaptiveTrigger MinWindowWidth="1" />
+                            <AdaptiveTrigger MinWindowWidth="10" />
                         </VisualState.StateTriggers>
                     </VisualState>
                     <VisualState x:Name="VisualStateMin800">
@@ -46,13 +46,12 @@
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
                 <RowDefinition Height="185*" />
-                <RowDefinition Height="25*" />
+                <RowDefinition Height="28*" />
             </Grid.RowDefinitions>
             <Grid  Grid.Column="0" Grid.Row="0" Name="leftView" >
                 <Grid.RowDefinitions>
                     <RowDefinition Height="1*"/>
                     <RowDefinition Height="8*"/>
-                    <RowDefinition Height="1*"/>
                 </Grid.RowDefinitions>
                 <Grid  Grid.Row="0">
                     <Grid.ColumnDefinitions>
@@ -62,56 +61,80 @@
                     <TextBox x:Name="searchTextBox" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Width="80" Height="36"   FontSize="16" />
                     <Button x:Name="searchButton" Click="SearchClick" Grid.Column="1" Content="search" HorizontalAlignment="Center" MinWidth="100" Width="80" Height="36" />
                 </Grid>
-                <ListView x:Name="listView" Grid.Row="1" IsItemClickEnabled="True" ItemClick="ListViewItemClick" ItemsSource="{x:Bind ViewModel.AllItems}">
-                    <ListView.ItemTemplate>
-                        <DataTemplate x:DataType="md:Model">
-                            <UserControl>
-                                <Grid Height="120" Width="auto" >
-                                    <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="42*" />
-                                        <ColumnDefinition Width="15" />
-                                        <ColumnDefinition Width="108*" />
-                                    </Grid.ColumnDefinitions>
-                                    <Image x:Name="photoImageListView"  Grid.Column="0" Source="{x:Bind photoUri, Converter={StaticResource UriToImage}, Mode=OneWay}" />
-                                    <Grid Grid.Column="2">
-                                        <Grid.RowDefinitions>
-                                            <RowDefinition Height="5*" />
-                                            <RowDefinition Height="5*" />
-                                            <RowDefinition Height="5*" />
-                                            <RowDefinition Height="5*" />
-                                        </Grid.RowDefinitions>
-                                        <TextBlock x:Name="musicTextBlockListView" Grid.Row="1" Text="{x:Bind musicName, Mode=OneWay}"/>
-                                        <TextBlock x:Name="dateTextBlockListView" Grid.Row="2" Text="{x:Bind date, Converter={StaticResource DateToString}, Mode=OneWay}" />
+                <StackPanel Grid.Row="1" x:Name="list">
+                    <ListView x:Name="listView" MaxHeight="400"  VerticalAlignment="Top" IsItemClickEnabled="True" ItemClick="ListViewItemClick" ItemsSource="{x:Bind ViewModel.AllItems}">
+                        <ListView.ItemTemplate>
+                            <DataTemplate x:DataType="md:Model">
+                                <UserControl>
+                                    <Grid Height="120" Width="auto" >
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="42*" />
+                                            <ColumnDefinition Width="15" />
+                                            <ColumnDefinition Width="108*" />
+                                        </Grid.ColumnDefinitions>
+                                        <Image x:Name="photoImageListView"  Grid.Column="0" Source="{x:Bind photoUri, Converter={StaticResource UriToImage}, Mode=OneWay}" />
+                                        <Grid Grid.Column="2">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="5*" />
+                                                <RowDefinition Height="5*" />
+                                                <RowDefinition Height="5*" />
+                                                <RowDefinition Height="5*" />
+                                            </Grid.RowDefinitions>
+                                            <TextBlock x:Name="musicTextBlockListView" Grid.Row="1" Text="{x:Bind musicName, Mode=OneWay}"/>
+                                            <TextBlock x:Name="dateTextBlockListView" Grid.Row="2" Text="{x:Bind date, Converter={StaticResource DateToString}, Mode=OneWay}" />
+                                        </Grid>
                                     </Grid>
-                                </Grid>
-                            </UserControl>
-                        </DataTemplate>
-                    </ListView.ItemTemplate>
-                </ListView>
-                <Grid  Grid.Row="2">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="1*"/>
-                        <ColumnDefinition Width="1*"/>
-                    </Grid.ColumnDefinitions>
-                    <Button x:Name="createButton" Click="CreateClick"  Grid.Column="0" Content="Create" HorizontalAlignment="Center" Width="80" Height="36" VerticalAlignment="Bottom"/>
-                    <Button x:Name="cancelButton" Click="CancelClick" Grid.Column="1" Content="Cancel" HorizontalAlignment="Center"  Width="80" Height="36" VerticalAlignment="Bottom"/>
-                </Grid>
+                                </UserControl>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                    <Grid VerticalAlignment="Top" x:Name="add" Height="60" >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="1*"/>
+                        </Grid.ColumnDefinitions>
+                        <Button x:Name="createButton" Click="CreateClick"  Grid.Column="0" Content="Create" HorizontalAlignment="Center" Width="80" Height="36" VerticalAlignment="Bottom"/>
+                        <Button x:Name="cancelButton" Click="CancelClick" Grid.Column="1" Content="Cancel" HorizontalAlignment="Center"  Width="80" Height="36" VerticalAlignment="Bottom"/>
+                    </Grid>
+                </StackPanel>
             </Grid>
 
             <Grid Grid.Column="1" Grid.Row="0" x:Name="InlineViewGrid">
                 <Grid.RowDefinitions >
                     <RowDefinition Height="2*"/>
-                    <RowDefinition Height="8*" />
+                    <RowDefinition Height="6*" />
                 </Grid.RowDefinitions>
                 <Grid Grid.Row="0">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="5*"/>
                         <ColumnDefinition Width="5*" />
                     </Grid.ColumnDefinitions>
-                    <Button Click="PhotoClick" x:Name="photoButton"   Grid.Column="0"  Background="AliceBlue" >
+                    <Button  x:Name="photoButton"   Grid.Column="0"  Background="AliceBlue" >
                         <Button.Content>
                             <Image x:Name="photoImageDetail"  Source="/Assets/example.jpg" />
                         </Button.Content>
+                        <Button.Flyout>
+                            <Flyout>
+                                <StackPanel Width="300" Height="80">
+                                    <TextBlock HorizontalAlignment="Center" Margin="0,0,0,15" Style="{StaticResource BaseTextBlockStyle}">
+                                        选择或拍摄一张照片
+                                    </TextBlock>
+                                    <Grid HorizontalAlignment="Center">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"></ColumnDefinition>
+                                            <ColumnDefinition Width="50"></ColumnDefinition>
+                                            <ColumnDefinition Width="*"></ColumnDefinition>
+                                        </Grid.ColumnDefinitions>
+                                        <Button Grid.Column="0" Click="PhotoClick" HorizontalAlignment="Center">
+                                            选择照片
+                                        </Button>
+                                        <Button Grid.Column="2" Click="takePhotoClick" HorizontalAlignment="Center">
+                                            拍摄照片
+                                        </Button>
+                                    </Grid>
+                                </StackPanel>
+                            </Flyout>
+                        </Button.Flyout>
                     </Button>
                     <Grid Grid.Column="1">
                         <Grid.RowDefinitions>
@@ -126,25 +149,25 @@
                         <DatePicker x:Name="dateDatePickerDetail" Grid.Row="3" IsEnabled="false" />
                     </Grid>
                 </Grid>
-                <TextBox x:Name="diaryTextBoxDetail" Grid.Row="1"  TextWrapping="Wrap" FontFamily="Microsoft YaHei" FontSize="36"  Text="diary" BorderThickness="0,0,0,0" />
+                <TextBox x:Name="diaryTextBoxDetail"  Grid.Row="1" PlaceholderText="Diary" TextWrapping="Wrap" FontFamily="Microsoft YaHei" FontSize="36" BorderThickness="0,0,0,0" FocusVisualSecondaryBrush="Black" />
             </Grid>
             <Grid Grid.Row="1" Grid.ColumnSpan="2">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="0.3*"/>
-                    <ColumnDefinition Width="2*"/>
                     <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="2*"/>
                     <ColumnDefinition Width="5*"/>
                     <ColumnDefinition Width="1*" />
                     <ColumnDefinition Width="1*"/>
                 </Grid.ColumnDefinitions>
                
-                <Ellipse  Grid.Column="1" MinHeight="50" MinWidth="50"  HorizontalAlignment="Left" VerticalAlignment="Center">
+                <Ellipse  Grid.Column="1" MinHeight="50" MinWidth="50"  HorizontalAlignment="Center" VerticalAlignment="Center">
                     <Ellipse.Fill>
                         <ImageBrush x:Name="coverImage" ImageSource="/Assets/cover.jpg"  />
                     </Ellipse.Fill>
                 </Ellipse>
                 <TextBlock x:Name="musicNameTextBlock" Grid.Column="2" Text="music name" HorizontalAlignment="Center" VerticalAlignment="Center" />
-                <MediaElement Grid.Column="3" x:Name="mediaElement" AutoPlay="True" AreTransportControlsEnabled="True" />
+                <MediaElement Grid.Column="3" x:Name="mediaElement" AutoPlay="True" AreTransportControlsEnabled="True"/>
                 <AppBarButton Click="SelectClick" Grid.Column="4" Icon="OpenFile" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                 <AppBarButton Click="DeleteClick" Grid.Column="5" Icon="Delete" HorizontalAlignment="Center" VerticalAlignment="Center" />
             </Grid>
