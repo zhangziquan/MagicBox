@@ -562,8 +562,21 @@
     <AppxPackagedFile Include="C:\Users\zhangziquan\source\repos\MagicBox\MagicBox\MagicBox\Assets\example.mp3">
       <PackagePath>Assets\example.mp3</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\zhangziquan\source\repos\MagicBox\MagicBox\MagicBox\Properties\Default.rd.xml">
-      <PackagePath>Properties\Default.rd.xml</PackagePath>
+    <AppxPackagedFile Include="C:\Users\zhangziquan\source\repos\MagicBox\MagicBox\MagicBox\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\zhangziquan\source\repos\MagicBox\MagicBox\MagicBox\Assets\SplashScreen.scale-125.png">
+      <PackagePath>Assets\SplashScreen.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\zhangziquan\source\repos\MagicBox\MagicBox\MagicBox\Assets\SplashScreen.scale-150.png">
+      <PackagePath>Assets\SplashScreen.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\zhangziquan\source\repos\MagicBox\MagicBox\MagicBox\Assets\SplashScreen.scale-400.png">
+      <PackagePath>Assets\SplashScreen.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\zhangziquan\source\repos\MagicBox\MagicBox\MagicBox\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
@@ -591,6 +604,9 @@
     <AppxPackagedFile Include="C:\Users\zhangziquan\source\repos\MagicBox\MagicBox\MagicBox\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\zhangziquan\source\repos\MagicBox\MagicBox\MagicBox\Properties\Default.rd.xml">
+      <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\zhangziquan\source\repos\MagicBox\MagicBox\MagicBox\bin\x86\Debug\MagicBox.xr.xml">
       <PackagePath>MagicBox.xr.xml</PackagePath>

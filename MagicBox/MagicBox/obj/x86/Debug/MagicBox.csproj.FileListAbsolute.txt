@@ -338,3 +338,6 @@ C:\Users\zhangziquan\Source\Repos\MagicBox\MagicBox\MagicBox\obj\x86\Debug\FxRes
 C:\Users\zhangziquan\Source\Repos\MagicBox\MagicBox\MagicBox\obj\x86\Debug\FxResources.System.Threading.Thread.SR.resw
 C:\Users\zhangziquan\Source\Repos\MagicBox\MagicBox\MagicBox\obj\x86\Debug\FxResources.System.Transactions.Local.SR.resw
 C:\Users\zhangziquan\Source\Repos\MagicBox\MagicBox\MagicBox\obj\x86\Debug\FxResources.System.ValueTuple.SR.resw
+C:\Users\zhangziquan\source\repos\MagicBox\MagicBox\MagicBox\bin\x86\Debug\Styles\TextBox.xbf
+C:\Users\zhangziquan\source\repos\MagicBox\MagicBox\MagicBox\obj\x86\Debug\Styles\TextBox.xaml
+C:\Users\zhangziquan\source\repos\MagicBox\MagicBox\MagicBox\obj\x86\Debug\Styles\TextBox.xbf
